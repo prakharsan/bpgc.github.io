@@ -1,0 +1,145 @@
+/* to the body element */
+body{
+background-color: #5CCAE8;
+}
+.noscroll { overflow: hidden; }
+
+.overlay {
+   position: fixed;
+   overflow-y: scroll;
+   z-index: 99;
+   top: 0; right: 0; bottom: 0; left: 0; }
+
+[aria-hidden="true"] { display: none; }
+[aria-hidden="false"] { display: block; }
+
+img {
+
+  max-width: 100%;
+  display: block;
+  margin: auto;
+}
+/* this code is not strictly necessary: just to make this demo a bit pleasant */
+
+.overlay div {
+   margin: 5vh auto;
+   width: 90%;
+   max-width: 1200px;
+   padding: 60px 30px;
+   background: rgba(255,255,255, 1);
+}
+.overlay {
+    background:  #ffffff;/*rgba(40,40,40, .75);*/
+}
+
+* { box-sizing: border-box; }
+button { padding: 1.5em 4em; cursor: pointer;}
+pre { background: #fafafa; padding: 15px; border: 1px #ccd dashed; }
+pre + p { margin: 5vh 0; }
+
+.close-overlay{
+  right: 10px;
+  font-size: 100px;
+  margin: 30px 15px;
+  position: fixed;
+}
+
+.back1 {
+  background: #7FDBFF; /* For browsers that do not support gradients */
+  background: -webkit-linear-gradient(left top, yellow, yellow); /* For Safari 5.1 to 6.0 */
+  background: -o-linear-gradient(bottom right, yellow, yellow); /* For Opera 11.1 to 12.0*/
+  background: -moz-linear-gradient(bottom right, yellow, yellow); /* For Firefox 3.6 to 15 */
+  background: linear-gradient(to bottom right, yellow, yellow); /* Standard syntax */
+}
+
+.back2 {
+  background: #85144b; /* For browsers that do not support gradients */
+  background: -webkit-linear-gradient(left top,  yellow, yellow); /* For Safari 5.1 to 6.0 */
+  background: -o-linear-gradient(bottom right,  yellow, yellow); /* For Opera 11.1 to 12.0*/
+  background: -moz-linear-gradient(bottom right,  yellow, yellow); /* For Firefox 3.6 to 15 */
+  background: linear-gradient(to bottom right,  yellow, yellow); /* Standard syntax */
+}
+
+.cover {
+  width: 80%;
+  height: 90%;
+  margin: 0 10% 5% 10%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 100;
+  padding-top: 5%;
+  display: block;
+  color: black;
+  text-shadow: 1px 1px #AAAAAA;
+}
+.cover h2 {
+  color: black;
+  text-shadow: 1px 1px #AAAAAA;
+}
+.cover a{
+  color: black;
+  text-shadow: 1px 1px #AAAAAA;
+}
+
+.btn-responsive {
+    white-space: normal !important;
+    word-wrap: break-word;
+}
+
+.slides-navigation {
+  top: 50%;
+}
+.slides-navigation a {
+  -webkit-border-radius: 30px;
+  -moz-border-radius: 30px;
+  -ms-border-radius: 30px;
+  -o-border-radius: 30px;
+  border-radius: 30px;
+  display: block;
+  text-decoration: none;
+  border: 3px solid #fff;
+  color: black;
+  font-weight: bold;
+  font-size: 26px;
+  margin: 0 25px;
+  text-shadow: 0 1px 1px #000;
+  text-align: center;
+  height: 40px;
+  width: 40px;
+  top: -40px;
+  padding-top: 5px;
+  -webkit-box-shadow: 0 1px 1px black;
+  -moz-box-shadow: 0 1px 1px black;
+  box-shadow: 0 1px 1px black;
+  -webkit-transition: background 0.15s ease;
+  -moz-transition: background 0.15s ease;
+  -o-transition: background 0.15s ease;
+  transition: background 0.15s ease;
+}
+.slides-navigation a:hover {
+  background: rgba(0, 0, 0, 0.4);
+}
+@media screen and (max-width: 767px) {
+  .slides-navigation {
+    display: none;
+  }
+}
+
+.slides-pagination a {
+  width: 15px;
+  height: 15px;
+  margin: 5px 2px;
+  border-color: black;
+  -webkit-box-shadow: 0 1px 1px black;
+  -moz-box-shadow: 0 1px 1px black;
+  box-shadow: 0 1px 1px black;
+}
+.slides-pagination a.current {
+  background: white;
+}
+
+.fa-lg {
+  font-size: 3em;
+  margin: 0 0.25em;
+}
